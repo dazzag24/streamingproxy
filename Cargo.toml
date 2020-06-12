@@ -1,0 +1,18 @@
+[package]
+name = "streamingproxy"
+version = "0.1.0"
+authors = ["Darren Gallagher <darren.gallagher@satavia.com>"]
+edition = "2018"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+anyhow = "1.0"
+log = "0.4"
+smol = { version = "0.1", features = ["tokio02"] }
+futures = "0.3.5"
+##futures-util = { version = "0.3.5", default-features = false, features = ["std", "io"] }
+#futures-io = { version = "0.3.5", default-features = false, features = ["std"] }
+async-task = "3.0.0"
+piper = "0.1.2"
+env_logger = "0.6.1"
